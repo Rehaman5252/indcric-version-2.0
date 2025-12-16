@@ -57,18 +57,7 @@ const HomeClientContentComponent = ({
           />
         </div>
 
-        {/* Step 2 – live stats section (wrap your real stats component here) */}
-        <div id="tour-step-2">
-          {/* Replace this block with your actual stats component if different */}
-          <div className="rounded-lg border border-amber-900/40 bg-black/40 p-4">
-            <h2 className="text-lg font-semibold text-amber-100">
-              Live Match & Quiz Stats
-            </h2>
-            <p className="text-sm text-muted-foreground">
-              See when the next quiz starts, how many people are playing, and today&apos;s winners.
-            </p>
-          </div>
-        </div>
+      
 
         {/* Step 3/4 – bottom navigation (make sure IDs match nav buttons) */}
         <div id="tour-step-3">
