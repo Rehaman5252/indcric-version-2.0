@@ -19,6 +19,16 @@ export const metadata: Metadata = {
   description: 'win ₹100 for every 100 seconds!',
   manifest: '/manifest.json',
   themeColor: '#D4AF37',
+  icons: {
+    // main favicon (best to generate a favicon.ico from your logo and put it in /public)
+    icon: [
+      { url: '/favicon.ico' },          // optional but recommended
+      { url: '/Indcric.png', type: 'image/png' }, // your logo in /public
+    ],
+    apple: [
+      { url: '/Indcric.png', type: 'image/png' }, // iOS home screen icon
+    ],
+  },
   appleWebApp: {
     capable: true,
     statusBarStyle: 'black-translucent',
@@ -41,13 +51,9 @@ export default function RootLayout({
       <body className={`${inter.variable} bg-background`}>
         <Providers>
           <ClientOnly>
-            {/* Main content */}
             <main className="pb-48">{children}</main>
-
-            {/* Bottom Navigation with footer */}
             <BottomNav />
           </ClientOnly>
-
           <Toaster />
         </Providers>
       </body>
