@@ -545,10 +545,10 @@ function RewardsContentComponent() {
       {/* Partner Offers */}
       <div id="rewards-partners" className="space-y-2">
         <h3 className="text-lg font-semibold text-foreground">
-          💼 Partner Offers
+          
         </h3>
         <p className="text-sm text-muted-foreground">
-          Exclusive deals from our partners. Use your rewards here!
+       
         </p>
 
         <GenericOffers />
